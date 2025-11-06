@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ikigai Vital</title>
+  <style>
+    :root {
+      --pink: #f7c6da;      /* rosado claro */
+      --pink-hover: #f2b2cb;
+      --text: #2a2a2a;
+      --bg: #fff8fb;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      color: var(--text);
+    }
+    .wrap {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      background: var(--pink);
+      color: var(--text);
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1.125rem;
+      cursor: pointer;
+      transition: transform .08s ease, background-color .15s ease, box-shadow .15s ease;
+      box-shadow: 0 8px 24px rgba(247, 198, 218, 0.6);
+      text-decoration: none; /* por si lo usas como <a> */
+    }
+    .btn:hover { background: var(--pink-hover); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <button class="btn">Ikigai Vital</button>
+    <!-- Si quieres que sea un enlace, cambia la línea de arriba por:
+    <a class="btn" href="#">Ikigai Vital</a>
+    -->
+  </main>
+</body>
+</html>
 
